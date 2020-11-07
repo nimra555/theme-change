@@ -1,8 +1,10 @@
+/* apply universal styles */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+/* style for toggle button  */
 button{
     margin-bottom: 5px;
     background-color: black;
@@ -10,26 +12,20 @@ button{
     padding: 10px;
     cursor: pointer;
 }
-.icon{
-    text-align: right;
-    font-size: 25px;
-    margin: 5px;
-    border: 1px solid black;
-    background-color: black;
-    width: 5%;
-    cursor: pointer;
-    padding: 5px;
-}
+/* moon icon color */
 .fa-moon{
     color: #f2c44f;
 }
+/* sun icon color */
 .fa-sun{
     color: #f39c10;
 }   
+/* quote style  */
 q{
     text-align: center;
     display: block;
 } 
+/* container style  */
 .container{
     padding: 10px;
     font-size: 23px;

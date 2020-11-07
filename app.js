@@ -1,7 +1,9 @@
-
+// declared variables
 let count = 0;
 let sun = '<i class="fas fa-sun"></i>';
 let moon = '<i class="fas fa-moon"></i>';
+
+// func for toggle theme 
 function changeTheme(){
     let buttonChange = document.querySelector("#btn");
     buttonChange.innerHTML = sun;
@@ -17,6 +19,7 @@ function changeTheme(){
    }
 }
 
+// func for change moon icon 
 function changedark(){
     let changeBG = document.querySelector("body");
     changeBG.style.backgroundColor = 'black';
@@ -25,6 +28,9 @@ function changedark(){
     quote[0].style.color = "red";
     quote[1].style.color = "blue";    
 }
+
+
+// func for change sun icon 
 function changeLight(){
     let changeBG = document.querySelector("body");
     changeBG.style.backgroundColor = 'white';

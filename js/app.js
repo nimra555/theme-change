@@ -11,31 +11,35 @@ function changeTheme(){
     ++count;
    if(count%2==0){
        console.log(count);
-       changedark();
+       changeLight();
        buttonChange.innerHTML = moon;   
    }
    else{
-    changeLight();
+    changedark();
    }
 }
 
 // func for change moon icon 
-function changedark(){
-    let changeBG = document.querySelector("body");
-    changeBG.style.backgroundColor = 'black';
-    changeBG.style.color = 'white';
-    let quote = document.querySelectorAll(".block");
-    quote[0].style.color = "red";
-    quote[1].style.color = "blue";    
-}
-
-
-// func for change sun icon 
 function changeLight(){
     let changeBG = document.querySelector("body");
     changeBG.style.backgroundColor = 'white';
     changeBG.style.color = 'black';
     let quote = document.querySelectorAll(".block");
     quote[0].style.color = "blue";
-    quote[1].style.color = "red";    
+    quote[1].style.color = "red";  
+    let closure = document.querySelector("#closure");
+    closure.style.color = 'blue';   
+}
+
+
+// func for change sun icon 
+function changedark(){
+    let changeBG = document.querySelector("body");
+    changeBG.style.backgroundColor = 'black';
+    changeBG.style.color = 'white';
+    let quote = document.querySelectorAll(".block");
+    quote[0].style.color = "red";
+    quote[1].style.color = "blue";  
+    let closure = document.querySelector("#closure");
+    closure.style.color = 'yellow';  
 }

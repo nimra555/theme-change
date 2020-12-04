@@ -4,36 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DARK & LIGHT MODE</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- font awsome icon -->
     <script src="https://kit.fontawesome.com/0413a50a0f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- toggle button -->
-    <button id="btn" onclick="changeTheme()"><i class="fas fa-sun"></i></button>
     <!-- div for all content  -->
     <div class="container">
-        <h1>JAVASCRIPT</h1>
+        <h3>whatthefork.is   · <span id="closure">a closure</span></h3>
+          <!-- toggle button -->
+    <button id="btn" onclick="changeTheme()"><i class="fas fa-sun"></i></button>
         <p>
-            JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with
-            first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser
-            environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a
-            prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative,
-            and declarative (e.g. functional programming) styles. Read more about JavaScript.
+            Closures are confusing because they are an “invisible” concept.
+        </p>
+        <p>    
+            When you use an object, a variable, or a function, you do this intentionally. You think: “I’m gonna need a variable here,” and add it to your code.
+        </p>
+        <p>   
+            Closures are different. By the time most people approach closures, they have already used them unknowingly many times — and it is likely that this is true for yourself, too. So learning closures is less about understanding a new concept and more about recognizing something you have already been doing for a while.
+        </p>     
+            
 
-            This section is dedicated to the JavaScript language itself, and not the parts that are specific to Web
-            pages or other host environments. For information about API specifics to Web pages, please see Web APIs and
-            DOM.
+        Notice how user => user.startsWith(query) is itself a function. It uses the query variable. But the query variable is defined outside of that function. That’s a closure.
 
-            The standard for JavaScript is ECMAScript. As of 2012, all modern browsers fully support ECMAScript 5.1.
-            Older browsers support at least ECMAScript 3. On June 17, 2015, ECMA International published the sixth major
-            version of ECMAScript, which is officially called ECMAScript 2015, and was initially referred to as
-            ECMAScript 6 or ES6. Since then, ECMAScript standards are on yearly release cycles. This documentation
-            refers to the latest draft version, which is currently ECMAScript 2020.
-
-            Do not confuse JavaScript with the Java programming language. Both "Java" and "JavaScript" are trademarks or
-            registered trademarks of Oracle in the U.S. and other countries. However, the two programming languages have
-            a very different syntax, semantic, and use
+        You can stop reading here, if you want. The rest of this article approaches closures in a different way. Instead of explaining what a closure is, it will walk you through the process of discovering closures — like the first programmers did in the 1960s.
         </p>
         <!-- quote -->
         <q class="block">You can always be better (Tiger Woods)</q>
@@ -42,6 +36,6 @@
 
     </div>
     <!-- javascript link  -->
-    <script src="app.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
